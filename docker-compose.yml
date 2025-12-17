@@ -1,0 +1,37 @@
+services:
+  nodo-a:
+    build: 
+      context: ./SolidarityGrid.Node
+      dockerfile: Dockerfile
+    environment:
+      - NODE_NAME=Nodo-A
+      - CONNECTION_STRING=Data Source=/app/data/solidaridad.db
+    ports:
+      - "8081:8080"
+    volumes:
+      - carpeta_compartida:/app/data
+
+  nodo-b:
+    build: 
+      context: ./SolidarityGrid.Node
+    environment:
+      - NODE_NAME=Nodo-B
+      - CONNECTION_STRING=Data Source=/app/data/solidaridad.db
+    ports:
+      - "8082:8080"
+    volumes:
+      - carpeta_compartida:/app/data
+
+  nodo-c:
+    build: 
+      context: ./SolidarityGrid.Node
+    environment:
+      - NODE_NAME=Nodo-C
+      - CONNECTION_STRING=Data Source=/app/data/solidaridad.db
+    ports:
+      - "8083:8080"
+    volumes:
+      - carpeta_compartida:/app/data
+
+volumes:
+  carpeta_compartida:

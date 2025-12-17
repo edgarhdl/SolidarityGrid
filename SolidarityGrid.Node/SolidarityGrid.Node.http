@@ -1,0 +1,6 @@
+@SolidarityGrid.Node_HostAddress = http://localhost:5098
+
+GET {{SolidarityGrid.Node_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

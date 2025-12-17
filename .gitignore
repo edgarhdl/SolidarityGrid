@@ -1,0 +1,11 @@
+bin/
+obj/
+# Base de datos 
+*.db
+*.db-wal
+*.db-shm
+
+.vscode/
+.vs/
+# Docker logs
+*.log
