@@ -1,4 +1,4 @@
-# SolidarityGrid: Protocolo del Buen Samaritano 🛡️
+# SolidarityGrid: Protocolo del Buen Samaritano 
 
 Este proyecto implementa un sistema de procesamiento de pagos distribuido, resiliente y altamente disponible, diseñado para operar en un entorno de **Arquitectura Mesh (Malla)** sin depender de un Broker central (como RabbitMQ o Kafka).
 
